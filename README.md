@@ -22,7 +22,8 @@ devtools::install_github("chemotaxis890/BIOS625HW3")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+New comment: basic example which shows you how to solve a common
+problem:
 
 ``` r
 library(BIOS625HW3)
