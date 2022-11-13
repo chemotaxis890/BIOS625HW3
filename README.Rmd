@@ -35,7 +35,7 @@ devtools::install_github("chemotaxis890/BIOS625HW3")
 library(BIOS625HW3)
 names(stroke)
 ```
-Check out the help page for the `stroke` dataset using `?stroke`. This is an example data for you to test the functions in this package.
+Check out the help page for the `stroke` data set using `?stroke`. This is an example data for you to test the functions in this package.
 
 
 

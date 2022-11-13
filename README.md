@@ -16,7 +16,7 @@ You can install the development version of BIOS625HW3 from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+# install.packages("BIOS625HW3")
 devtools::install_github("chemotaxis890/BIOS625HW3")
 ```
 
@@ -24,8 +24,15 @@ devtools::install_github("chemotaxis890/BIOS625HW3")
 
 ``` r
 library(BIOS625HW3)
-#summary(stroke)
+names(stroke)
+#>  [1] "Age"           "Sex"           "R_E"           "Education"    
+#>  [5] "Htn"           "HiChol"        "Afib"          "Cad"          
+#>  [9] "Db"            "CurrentSmoker" "HxStroke"      "NIHScore"     
+#> [13] "Comorbidity1"  "Fatalism"      "Depression"
 ```
+
+Check out the help page for the `stroke` data set using `?stroke`. This
+is an example data for you to test the functions in this package.
 
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`
 up-to-date. `devtools::build_readme()` is handy for this. You could also
