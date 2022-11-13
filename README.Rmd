@@ -25,30 +25,40 @@ The goal of BIOS625HW3 is to develop an R package implementing an existing R fun
 You can install the development version of BIOS625HW3 from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+# install.packages("BIOS625HW3")
 devtools::install_github("chemotaxis890/BIOS625HW3")
 ```
 
-## Example
+## In-package Dataset
 
-New comment: basic example which shows you how to solve a common problem:
-
-```{r example,eval=F}
+```{r example}
 library(BIOS625HW3)
-## basic example code
+names(stroke)
 ```
+Check out the help page for the `stroke` dataset using `?stroke`. This is an example data for you to test the functions in this package.
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars,eval=F}
-summary(cars)
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
 
 You can also embed plots, for example:
 
-```{r pressure, ,eval=F,echo = FALSE}
+```{r pressure,echo = FALSE}
 plot(pressure)
 ```
 

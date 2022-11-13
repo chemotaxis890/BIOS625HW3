@@ -20,21 +20,11 @@ You can install the development version of BIOS625HW3 from
 devtools::install_github("chemotaxis890/BIOS625HW3")
 ```
 
-## Example
-
-New comment: basic example which shows you how to solve a common
-problem:
+## In-package Dataset
 
 ``` r
 library(BIOS625HW3)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
+#summary(stroke)
 ```
 
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`
@@ -44,6 +34,8 @@ example workflow can be found here:
 <https://github.com/r-lib/actions/tree/v1/examples>.
 
 You can also embed plots, for example:
+
+<img src="man/figures/README-pressure-1.png" width="100%" />
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.

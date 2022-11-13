@@ -1,0 +1,25 @@
+#' Stroke Data
+#'
+#' @description In BIOSTAT 625, we are given a data set of stroke. The data aims to describe the association of spirituality, optimism, fatalism and depression symptoms with initial stroke severity, stroke recurrence and post-stroke mortality.
+#'
+#' @format this data frame has 612 rows and the following 14 columns:
+#' \describe{
+#'   \item{Age}{Participant age in years}
+#'   \item{Sex}{0=male, 1=female}
+#'   \item{R_E}{Race/Ethnicity;1=MA, 0=NHW}
+#'   \item{Education}{Participant's education level: 2=has less than highschool education, 1= has at least a highschool education (or more)}
+#'   \item{Htn}{If participant has Hypertension,Htn=1; Htn=0 otherwise}
+#'   \item{HiChol}{If participant has High Cholesterol then HiChol=1; HiChol=0 otherwise}
+#'   \item{Afib}{If participant has Atrial Fibrillation then Afib=1; Afib=0 otherwise }
+#'   \item{Cad}{If participant has History of Coronary Artery Disease then Cad=1; Cad=0 otherwise}
+#'   \item{Db}{If participant has Diabetes then Db=1; Db=0 otherwise}
+#'   \item{CurrentSmoker}{If participant is currently smoking then CurrentSmoker=1; CurrentSmoker=0 otherwise}
+#'   \item{HxStroke}{If participant has history of prior strok then HxStroke=1; HxStroke=0 otherwise}
+#'   \item{NIHScore}{Degree of stroke severity}
+#'   \item{Comorbidity1}{Number of comorbidities the patient suffers from}
+#'   \item{Fatalism}{Score on the fatalism scale; higher is higher fatalism}
+#'   \item{Depression}{Score on the depression scale; higher value means higher depression severity}
+#' }
+#' @source \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3226864/}
+"stroke"
+
