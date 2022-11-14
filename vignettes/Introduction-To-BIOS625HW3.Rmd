@@ -37,5 +37,10 @@ The function returns a list of seven objects, including coefficient table, R-squ
 Here is an example to test the effect of age on depression score:
 
 ```{r}
-slr('Depression','Age',stroke)
+fitted <- slr('Depression','Age',stroke)
+fitted$coefficient
+```
+
+```{r}
+fitted$formula
 ```
