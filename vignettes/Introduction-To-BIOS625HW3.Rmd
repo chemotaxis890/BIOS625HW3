@@ -1,5 +1,5 @@
 ---
-title: "Introduction-To-BIOS625HW3"
+title: "Introduction-to-BIOS625HW3"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introduction-To-BIOS625HW3}
@@ -16,4 +16,26 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(BIOS625HW3)
+```
+
+The package contains a build-in data set called "stroke", which contains variables to explore the relationship between stroke and depression, considering for other co-variates.
+
+```{r}
+names(stroke)
+```
+
+The `slr()` function is to simulate the `lm()` function but in a simpler way that:
+
+1\. Only test for one input and one outcome.
+
+2\. The variables of interest need to be numeric (i.e., not categorical variables).
+
+3\. The variables shall not contain missing values, Inf, or NaN.
+
+The function returns a list of seven objects, including coefficient table, R-squared, formula, F-statistics of the model fit.
+
+Here is an example to test the effect of age on depression score:
+
+```{r}
+slr('Depression','Age',stroke)
 ```

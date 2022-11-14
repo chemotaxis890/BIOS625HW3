@@ -7,6 +7,7 @@
 
 [![Codecov test
 coverage](https://codecov.io/gh/chemotaxis890/BIOS625HW3/branch/main/graph/badge.svg)](https://app.codecov.io/gh/chemotaxis890/BIOS625HW3?branch=main)
+[![R-CMD-check](https://github.com/chemotaxis890/BIOS625HW3/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/chemotaxis890/BIOS625HW3/actions/workflows/R-CMD-check.yaml)
 
 <!-- badges: end -->
 

@@ -1,6 +1,6 @@
-context("Run slr with packaged dataset stroke")
+#context("Run slr with packaged dataset stroke")
 
-data('stroke')
+data(stroke)
 
 fit <- try(BIOS625HW3::slr("Depression",'Age',stroke),
            silent = TRUE)

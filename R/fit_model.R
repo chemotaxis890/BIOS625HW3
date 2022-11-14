@@ -1,7 +1,4 @@
 slr <- function(outcome.str, covariate.str, data){
-  if (sum(complete.cases(data))!=nrow(data)){
-    return(print('Error: data contains NA values'))
-  } else{
     #outcome.str <- 'Depression'
     #covariate.str <- 'Fatalism'
     #data <- stroke
@@ -53,6 +50,6 @@ slr <- function(outcome.str, covariate.str, data){
                 F_df1=1,
                 F_df2=n-2,
                 F_p_value=p_value))
-  }}
+  }
 # example to use this function :
 # fitted <- slr('Depression','Fatalism',stroke)
