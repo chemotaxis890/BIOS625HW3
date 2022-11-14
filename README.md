@@ -4,6 +4,10 @@
 # BIOS625HW3
 
 <!-- badges: start -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/chemotaxis890/BIOS625HW3/branch/main/graph/badge.svg)](https://app.codecov.io/gh/chemotaxis890/BIOS625HW3?branch=main)
+
 <!-- badges: end -->
 
 The goal of BIOS625HW3 is to develop an R package implementing an
