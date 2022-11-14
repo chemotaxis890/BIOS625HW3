@@ -82,8 +82,7 @@ all.equal(as.numeric(pval),fitted$F_p_value)
 ## Benchmark the functions
 ```{r}
 library(bench)
-result <-  bench::mark(as.numeric(lm(Depression~Age, stroke)$coefficients),
-                       slr('Depression','Age',stroke)$coefficient[,1])
+result <- bench::mark(as.numeric(lm(Depression~Age, stroke)$coefficients),slr('Depression','Age',stroke)$coefficient[,1])
 result
 ```
 
