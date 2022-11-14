@@ -1,3 +1,18 @@
+#' @title slr
+#' @description Simple Linear Regression (SLR) is to estimate the effect of a single input variable on an interested outcome variable in an observed data set.  
+#' @param outcome.str The string of the name of a numeric outcome variable in the dataset, e.g., 'Depression'
+#' @param covariate.str The string of the name of a numeric input variable in the dataset, e.g., 'Age'
+#' @param data A data frame containing the selected variables in the model.
+#' @return A seven-object list of the fitted model parameters, including the formula, a coefficient table, R-squared, F-statistics, degrees of freedom and the p-value.
+#' @details Can use the existing data `stroke` and select input and outcome variables to try this function out. Also remember that no NA should exist in the selected variables, otherwise the data needs imputation.
+#' @examples 
+#' \dontrun{
+#' if(interactive()){
+#'  fitted <- slr('Depression','Age',stroke)
+#'  }
+#' }
+#' @rdname slr
+#' @export 
 slr <- function(outcome.str, covariate.str, data){
   if (sum(complete.cases(data))!=nrow(data)){
     return(print('Error: data contains NA values'))

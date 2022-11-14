@@ -37,6 +37,11 @@ names(stroke)
 ```
 Check out the help page for the `stroke` data set using `?stroke`. This is an example data for you to test the functions in this package.
 
+## Function in this package
+
+```{r}
+slr('Depression','Fatalism',stroke)
+```
 
 
 

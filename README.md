@@ -34,6 +34,34 @@ names(stroke)
 Check out the help page for the `stroke` data set using `?stroke`. This
 is an example data for you to test the functions in this package.
 
+## Function in this package
+
+``` r
+slr('Depression','Fatalism',stroke)
+#> $formula
+#> [1] "Depression~Fatalism"
+#> 
+#> $coefficient
+#>              Estimate   t.stat      p.value significance
+#> (intercept) 1.2819113 1.781424 7.534065e-02             
+#> Fatalism    0.2457615 6.227285 8.838653e-10          ***
+#> 
+#> $R_squared
+#> [1] 0.0597724
+#> 
+#> $F_statistic
+#> [1] 38.77908
+#> 
+#> $F_df1
+#> [1] 1
+#> 
+#> $F_df2
+#> [1] 610
+#> 
+#> $F_p_value
+#> [1] 8.838653e-10
+```
+
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`
 up-to-date. `devtools::build_readme()` is handy for this. You could also
 use GitHub Actions to re-render `README.Rmd` every time you push. An
