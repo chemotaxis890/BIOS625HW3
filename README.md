@@ -31,10 +31,18 @@ names(stroke)
 #> [13] "Comorbidity1"  "Fatalism"      "Depression"
 ```
 
-Check out the help page for the `stroke` data set using `?stroke`. This
-is an example data for you to test the functions in this package.
+Check out the help page for the `stroke` data set using `?stroke`,which
+has a simple code book for each variable. This is a build-in data for
+you to test the functions in this package.
 
 ## Function in this package
+
+Check out the help page for the `slr()` function using `?slr()`. It is a
+function that returns the result of a simple linear regression model of
+two numeric variables.
+
+For example, to get the regression model of Fatalism on Depression using
+`slr()`:
 
 ``` r
 slr('Depression','Fatalism',stroke)
@@ -61,16 +69,3 @@ slr('Depression','Fatalism',stroke)
 #> $F_p_value
 #> [1] 8.838653e-10
 ```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
