@@ -13,7 +13,6 @@ Suggests:
     covr,
     knitr,
     rmarkdown,
-    stat,
     stats,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
