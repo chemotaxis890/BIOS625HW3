@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 library(BIOS625HW3)
 ```
 
+## Examples of how to use it
+
 The package contains a build-in data set called "stroke", which contains variables to explore the relationship between stroke and depression, considering for other co-variates.
 
 ```{r}
@@ -44,3 +46,44 @@ fitted$coefficient
 ```{r}
 fitted$formula
 ```
+
+## Check Correctness with lm output
+
+```{r}
+fitted.lm <- lm(Depression~Age, stroke)
+#check coefficient
+all.equal(as.numeric(fitted.lm$coefficients),
+          fitted$coefficient[,1])
+#check t-statistics
+all.equal(as.numeric(summary(fitted.lm)$coefficients[,3]),
+          fitted$coefficient[,2])
+#check p-value
+all.equal(as.numeric(summary(fitted.lm)$coefficients[,4]),
+          fitted$coefficient[,3])
+#check R-squared
+all.equal(summary(fitted.lm)$r.squared,
+          fitted$R_squared)
+#check F-statistic
+all.equal(as.numeric(summary(fitted.lm)$fstatistic[1]),
+          fitted$F_statistic)
+#check F-statistic df1
+all.equal(as.numeric(summary(fitted.lm)$fstatistic[2]),
+          fitted$F_df1)
+#check F-statistic df2
+all.equal(as.numeric(summary(fitted.lm)$fstatistic[3]),
+          fitted$F_df2)
+#check F-statistic p-value
+fstat <- summary(fitted.lm)$fstatistic
+pval <- pf(fstat[1], fstat[2], fstat[3], lower.tail=FALSE)
+all.equal(as.numeric(pval),fitted$F_p_value)
+
+```
+
+## Benchmark the functions
+```{r}
+library(bench)
+result <-  bench::mark(as.numeric(lm(Depression~Age, stroke)$coefficients),
+                       slr('Depression','Age',stroke)$coefficient[,1])
+result
+```
+
